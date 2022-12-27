@@ -36,7 +36,41 @@ Follow steps on [how to install antlr4](https://stackoverflow.com/questions/4102
 
 ### GRUN
 
+#### Tokens
+
 ```bash
 > cd out
-> grun <GrammarName> <Rule> [-tokens] <FileName>
+> grun <GrammarName> <Rule> -tokens ../<FileName>.txt
+```
+
+Example for `Hello`:
+
+```bash
+> grun Hello r -tokens ../Hello.txt
+```
+
+#### Tree
+
+```bash
+> cd out
+> grun <GrammarName> <Rule> -tree ../<FileName>.txt
+```
+
+Example for `Hello`:
+
+```bash
+> grun Hello r -tree ../Hello.txt
+```
+
+#### GUI
+
+```bash
+> cd out
+> grun <GrammarName> <Rule> -gui ../<FileName>.txt
+```
+
+Example for `Hello`:
+
+```bash
+> grun Hello r -gui ../Hello.txt
 ```
