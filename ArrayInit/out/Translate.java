@@ -1,7 +1,7 @@
 import org.antlr.v4.runtime.*;
 import org.antlr.v4.runtime.tree.*;
 
-public class Test {
+public class Translate {
     public static void main(String[] args) throws Exception {
         // create a CharStream that reads from standard input
         // CharStream input = CharStreams.fromFileName("../ArrayInit.txt");
@@ -19,7 +19,11 @@ public class Test {
         // begin parsing at init rule
         ParseTree tree = parser.init();
 
-        // print LISP-style tree
-        System.out.println(tree.toStringTree(parser));
+        // Create a generic parse tree walker that can trigger callbacks
+        ParseTreeWalker walker = new ParseTreeWalker();
+
+        // Walk the tree created during the parse, trigger callbacks
+        walker.walk(new ShortToUnicodeString(), tree);
+        System.out.println();
     }
 }
