@@ -19,8 +19,8 @@ statement:
  expression
  */
 expression:
-	expression op = (MUL | DIV) expression		# MulDiv
-	| expression op = (ADD | SUB) expression	# AddSub
+	expression op = ('*' | '/') expression		# MulDiv
+	| expression op = ('+' | '-') expression	# AddSub
 	| INT										# int
 	| ID										# id
 	| '(' expression ')'						# parens;
