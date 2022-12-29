@@ -1,0 +1,11 @@
+# ANTLR Expression Grammar
+
+Parse expressions:
+
+```txt
+123
+a = 10
+b = 20
+2 + 5 * 3
+(2 + 5) * 3
+```
