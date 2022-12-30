@@ -4,7 +4,7 @@ In this exampe, we have to translate java classes to java interfaces while conse
 
 ## Parse Tree
 
-![Parse Tree](img/antlr4_parse_tree.png "Parse Tree")
+![Parse Tree](./img/antlr4_parse_tree.png "Parse Tree")
 
 ## Output
 
