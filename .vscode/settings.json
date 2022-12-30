@@ -4,5 +4,6 @@
         "ArrayInit/src",
         "Expression/src",
         "Calculator/src",
+        "JavaInterface/src",
     ]
 }
